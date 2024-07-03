@@ -12,6 +12,10 @@ body {
     font-size: 60px;
 }
 
+h1{
+    background-color:white;
+}
+
 header {
     background-color: rgba(24, 201, 24, 0.858); // update
     color:white;
