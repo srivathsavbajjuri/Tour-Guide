@@ -71,14 +71,14 @@ section ul li a {
 section h2{
     text-align: center;
 }
-section img{
-    width: 30%;
+section img {
+    width: 30%; /* Default width */
     margin-top: 2%;
-    height: 40%;
+    height: 40%; /* Default height */
     position: absolute;
-  top: 50%; right: 50%;
-  transform: translate(50%,-50%);
-
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
 }
 footer {
     display: none;
@@ -106,5 +106,9 @@ footer {
 
     footer {
         position: static;
+    }
+    section img {
+        width: 60%; /* Adjusted width for smaller screens */
+        height: auto; /* Auto height to maintain aspect ratio */
     }
 }
