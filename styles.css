@@ -19,6 +19,7 @@ header {
     text-align: center;
     font-size: 40px;
     padding-bottom: 10%;
+    position: relative; /* Add relative positioning to create a new context */
 }
 
 header li {
@@ -77,13 +78,12 @@ section h2 {
 }
 
 section img {
-    width: 30%; /* Default width */
-    margin-top: 2%;
+    max-width: 100%; /* Ensures image does not exceed its container */
     height: auto; /* Auto height to maintain aspect ratio */
     position: absolute;
     top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 footer {
@@ -118,9 +118,9 @@ footer {
         width: 80%; /* Adjusted width for smaller screens */
         max-width: 300px; /* Maximum width to avoid overfitting */
         height: auto; /* Auto height to maintain aspect ratio */
-        position: static; /* Reset position to normal flow */
-        transform: none; /* Reset transform */
-        margin: 10px auto; /* Center horizontally with margin */
-        display: block; /* Ensure it behaves like a block element */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
