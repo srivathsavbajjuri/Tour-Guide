@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Guide</title>
+        <nav>
+            <ul>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="feedback.html">Feedback & Suggestions</a></li>
+            </ul>
+        </nav>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image: url('wall2.jpg');">
+    
+        <h1 id = "hi">Tour Guide</h1>
+    
+    <main>
+
+        <div style = "display: flex; flex-direction: row; justify-content: center;">
+            <h2 style="color: white; font-size: 40px;">Select a City</h2>
+        </div>
+        <section style = "display: flex; flex-direction: row; justify-content: center;">
+            
+            <select style ="height: 40px; width: 200px;" id="citySelect" onchange="navigateToCity()">
+                <option value="">Select a City</option>
+                <option value="hyderabad">Hyderabad</option>
+                <option value="warangal">Warangal</option>
+                <option value="siddipet">Siddipet</option>
+                <option value="karimnagar">Karimnagar</option>
+                <option value="adilabad">Adilabad</option>
+                <option value="vizag">Vizag</option>
+                <option value="guntur">Guntur</option>
+                <option value="tirupati">Tirupati</option>
+                <option value="kurnool">Kurnool</option>
+                <option value="vijayawada">Vijayawada</option>
+                <option value="kakinada">Kakinada</option>
+                
+            </select>
+        </section>
+        </main>
+        </div>
+    </main>
+
+  
+
+    <script>
+        function navigateToCity() {
+            const city = document.getElementById('citySelect').value;
+            if (city) {
+                window.location.href = `${city}/index.html`;
+            }
+        }
+    </script>
+</body>
+</html>
+
