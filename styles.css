@@ -79,7 +79,7 @@ section h2 {
 section img {
     width: 30%; /* Default width */
     margin-top: 2%;
-    height: 40%; /* Default height */
+    height: auto; /* Auto height to maintain aspect ratio */
     position: absolute;
     top: 50%;
     right: 50%;
@@ -115,7 +115,8 @@ footer {
     }
 
     section img {
-        width: 60%; /* Adjusted width for smaller screens */
+        width: 80%; /* Adjusted width for smaller screens */
+        max-width: 300px; /* Maximum width to avoid overfitting */
         height: auto; /* Auto height to maintain aspect ratio */
         position: static; /* Reset position to normal flow */
         transform: none; /* Reset transform */
