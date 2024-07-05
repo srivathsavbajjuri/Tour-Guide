@@ -14,7 +14,7 @@ body {
 
 
 header {
-    background-color: rgba(24, 201, 24, 0.858); // update
+    background-image: url("bg.png"); // update
     color:white;
     padding: 1em 0;
     text-align: center;
